@@ -208,6 +208,11 @@ int SotLoader::parseOptions(int argc, char *argv[])
   return 0;
 }
 
+void SotLoader::setDynamicLibraryName(std::string lib_name)
+{
+  dynamicLibraryName_ = lib_name;
+}
+
 void SotLoader::Initialization()
 {
 

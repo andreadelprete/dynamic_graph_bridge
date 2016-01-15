@@ -114,6 +114,13 @@ public:
   // \brief Read user input to extract the path of the SoT dynamic library.
   int parseOptions(int argc, char *argv[]);
 
+  /**
+    \brief Set the name of the SoT dynamic library to load
+    This method is an alternative to the method parseOption which
+    takes as input the arguments passed to the main function.
+    */
+  void setDynamicLibraryName(std::string lib_name);
+
   // \brief Load the SoT
   void Initialization();
 
